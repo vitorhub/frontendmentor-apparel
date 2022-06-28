@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Base Apparel coming soon page</title>
+  <link rel="stylesheet" href="src/css/style.css">
+  <link rel="stylesheet" href="src/css/reset.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: .8rem;
+      bottom: 0;
+      position: absolute;
+      height: 30px;
+      background-color: #1E1E1E;
+      color: #fff;
+      bottom: 0;
+      width: 100%;
+      margin: auto auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 49%, 76%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <section class="container">
+
+    <section class="base">
+      <img class="logo-base" src="images/logo.svg" alt="">
+      <img class="img-mobile" src="images/hero-mobile.jpg" alt="hero">
+      <h1>
+        <span>We're</span> <br>
+        coming <br>
+        soon
+      </h1>
+
+      <p>
+        Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date
+        with announcements and our launch deals.
+      </p>
+
+      <section class="form">
+        <input type="text" name="email" id="email" placeholder="Email Address">
+        <img id="img-erro" src="images/icon-error.svg" alt="erro">
+        <button class="btn" id="btn">
+          <img class="seta" src="images/icon-arrow.svg" alt="arrow">
+        </button>
+      </section>
+      <small id="advertencia">
+        Please provide a valid email
+      </small>
+
+    </section>
+    <img class="img-desk" src="images/hero-desktop.jpg" alt="">
+  </section>
+
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Vitor Falcão</a>.
+    </p>
+  </footer>
+  <script src="src/js/index.js"></script>
+</body>
+
+</html>
