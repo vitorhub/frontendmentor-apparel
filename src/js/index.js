@@ -1,10 +1,11 @@
 const advertencia = document.getElementById("advertencia");
 const btn = document.querySelector("#btn");
 let campoImput = document.getElementById("email");
+const erro = document.querySelector("#img-erro");
 
 btn.addEventListener("click",
-    (e) => {
-        e.preventDefault();
+    () => {
+/*         e.preventDefault(); */
         validar();
     }
 );
@@ -27,21 +28,31 @@ function validar() {
         /* bol */let comDepoisDeArroba = posicaoCom > posicaoArroba;
             if (soUmArroba && temCom && comDepoisDeArroba) {
                 /* procura posicao do arroba */
-    /* bol */pontoAposArroba = campoImput.value[posicaoArroba + 1] == ".";
+        /* bol */pontoAposArroba = campoImput.value[posicaoArroba + 1] == ".";
                 if (!pontoAposArroba) {
                     console.log("ok");
                     let troca = document.getElementById("mostra-advertencia");
                     troca.id = "advertencia";
+                    erro.id = "img-erro";
                 }
                 else {
                     advertencia.id = "mostra-advertencia";
+                    erro.id = "mostra-img-erro";
                 }
             }
-            else { advertencia.id = "mostra-advertencia"; }
+            else {
+                advertencia.id = "mostra-advertencia";
+                erro.id = "mostra-img-erro";
+            }
         }
-        else { advertencia.id = "mostra-advertencia"; }
+        else {
+            advertencia.id = "mostra-advertencia";
+            erro.id = "mostra-img-erro";
+        }
+
     }
     else {
         advertencia.id = "mostra-advertencia";
+        erro.id = "mostra-img-erro";
     }
 }
