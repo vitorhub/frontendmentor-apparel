@@ -30,10 +30,11 @@ function validar() {
                 /* procura posicao do arroba */
         /* bol */pontoAposArroba = campoImput.value[posicaoArroba + 1] == ".";
                 if (!pontoAposArroba) {
-                    console.log("ok");
                     let troca = document.getElementById("mostra-advertencia");
                     troca.id = "advertencia";
                     erro.id = "img-erro";
+                    console.log("ok");
+                    document.body.innerHTML = "Well done";
                 }
                 else {
                     advertencia.id = "mostra-advertencia";

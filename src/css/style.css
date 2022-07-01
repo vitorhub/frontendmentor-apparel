@@ -38,14 +38,32 @@
     font-size: 50px;
     text-transform: uppercase;
     letter-spacing: 10px;
+    /* para animacao deslizar */
+    transform: translateX(-100%);
+    animation: comeinleft 0.5s ease forwards;
 }
+@keyframes comeinleft{
+    to{
+        transform: translateX(0);
+    }
+}
+    /* para animacao deslizar */
+
 .base p{
     margin-top: 20px;
     line-height: 25px;
     font-size: 15px;
     font-weight: 300;
     color: hsl(0, 36%, 70%);
+    transform: translateX(100%);
+    animation: comeinright 0.5s ease forwards;
 }
+@keyframes comeinright{
+    to{
+        transform: translateX(0);
+    }
+}
+
 .form {
     display: flex;
     margin-top: 30px;
